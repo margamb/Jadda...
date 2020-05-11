@@ -1,0 +1,76 @@
+<!-- Tips -->
+    <!-- 
+        Let's talk about...
+        You x
+        TV x
+        The past
+        The experiences x
+        Movies x
+        English x
+        Superstition
+        'What if'
+        Money
+        Beauty
+        Work x
+        Houses x
+        Cars
+        Learning English
+        'How to'
+        Languages
+        The fears
+        The sports x
+        Pets x
+        Family x
+        The meaning of life
+        History
+        Health
+        School x
+        Music x
+        Pop Music x
+
+     -->
+     <!--
+        Technology
+        Travelling
+        Pet Peeves x
+        Religion
+        Love
+        Turism
+        Aliens
+        Christmas
+        Space
+        Australia
+        The news
+        China
+        Teaching English
+        
+     -->
+
+     groups
+    ME
+        You
+        Family
+        Pet Peeves
+        Movies
+        Work 
+        Pets
+        Music
+        Pop Music
+        TV
+        School
+        English
+        Houses
+        Sport
+    
+    PAST 
+        The past
+        Experiences
+
+    LANGUAGES 
+
+
+    MIX 
+        'What if'
+        Money
+        The meaning of life
+        Health
