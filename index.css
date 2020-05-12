@@ -10,6 +10,13 @@ body {
     margin-top: 40px;    
 }
 
+.explain {
+	font-size: 12px;
+    text-align: left;
+	margin-bottom: 20px;
+	color: #217E80;
+}
+
 #textAsk {
 	font-size: 20px;
 	color: white;
@@ -64,6 +71,7 @@ body {
 	background-repeat: no-repeat, repeat;
 	background-position: right .7em top 50%, 0 0;
 	background-size: .65em auto, 100%;
+	cursor: pointer;
 }
 .select-css::-ms-expand {
 	display: none;
@@ -83,9 +91,16 @@ body {
 }
 
 #square {
+	width: auto;
+	height:200px;
+	background: #FF2CAA;
+	border-radius: .6em;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	overflow: visible;
+	cursor: pointer;
 }

@@ -27,6 +27,27 @@ var you = [
   'What time do you usually go to bed?',
 ];
 
+var family = [
+  'How many people are there in your family? Who are they?',
+  'Do you have any brothers or sisters?', 
+  'How many grandparents have you got? How often do you see them?',
+  'How do your parents earn a living?(= what are their jobs)',
+  'What does your family usually do on Sundays?',
+  'Who’s the oldest in you family? Who’s the youngest?',
+  'How many cousins do you have? What do you do when you see them?',
+  'So you have any great-grandparents? If so, how old are they?',
+  'Do you have any family living or working abroad?',
+  'Pick a family member. Describe looks (= outside) and character (=inside)',
+  'Does your family eat meals together ? What else do you do together?',
+  'Who does the housework in your family? (Cooking, cleaning, washing…)',
+  'Talk about the relative you like most. Say why you like him or hem.',
+  'Would you live with your parents after getting married? Why or why not?',
+  'Are there any rules in your family? What are they? Do you think they are fair?',
+  'What do your parents look like? Do you take after them? (= look like them)',
+  'Is family important to you?',
+  'Do you ever hold a family reunion? If so, what happens there?',
+];
+
 var school = [
   'What school do you go to? Where is it? How do you get there?',
   'What’s your favourite subject? Why do you like it?',
@@ -85,14 +106,85 @@ var music = [
   "‘Anything that is too stupid to be spoken is sung’ Do you agree?",
   "‘MTV is to music as KFC is to chicken’ Explain. Do you agree?",
   "Has your taste in music changed over the years?",
-
 ];
 
-//tips
+var petPeeves = [
+  'What annoys you most in daily life? Make a list of your pet peeves.',
+  'Make a list of annoying habits. Do you have any?',
+  'What annoys you most at work (or at school)? Why?',
+  'Do you have any new pet peeves as result of modern technology?',
+  'Do you get annoyed when people display bad manners? Give some examples.',
+  'What annoys you about mobile phones?',
+  'What annoys you about living where you live now?',
+  'What annoys you about coming to work or school by bus, train or car?',
+  'What annoys you about email or computers?',
+  'What do your parents do that annoys you?',
+  'What do children do that annoys parents?',
+  'Does smoking bother you? Why or Why not?',
+  'If something or someone annoys you, what do you usually do? Give examples.',
+  'Who is the most annoying person you know? Why?',
+  'Who is the most annoying celebrity? Why?',
+  'Do you think other people find you annoying? Wy or why not?',
+  'Does it annoy you when people kiss or show affection in public?',
+];
+
+var movies = [
+  'How often do you go to the cinema? Who do you go with?',
+  'What’s the name of the last film you saw? What was it about?',
+  'Do you prefer to watch movies at home or in the cinema? Why?',
+  'What is the worst movie you have ever seen? Why was it so bad?',
+  'When you watch an English movie, do you prefer it dubbed or subtitled? Why?',
+  'Do you ever watch reality TV shows? Do you like them? Why (not)?',
+  'What kind of movies do you like? Why? (Action, horror…)',
+  'Do you like horror movies? Why (not)?',
+  'Do you ever rent DVDs? If so, where do you rent them?',
+  'Have you ever watched the Academy Awards(Oscars)? If so, dis you like it? Why?',
+  'Movie stars are often painful millions of dollars. Do you think they deserve this? Explain',
+  'What kind of snacks or drinks do you have when you go to the movies?',
+  'Who’s your favourite actor or actress? Why do you like them?',
+  'What’s the best movie you have ever seen? Explain why',
+  'Have you ever bought a pirate movie? Do you think it is OK to copy movies?',
+  'Do you watch movies in English or your language? Which do you prefer?',
+  'Give as many ‘movies words’ as you Know.  Director, set, film…',
+  'Would you like to be a famous film star? Why or why not?',
+  'Have you ever seen a horror movie?',
+  'Have you ever eaten popcorn in the cinema?',
+  'Have you ever left the theatre before the end?',
+  'Have you ever rented a DVD?',
+  'Have you ever met a film star?',
+  'Have you ever asked for an autograph?',
+];
+
+var health = [
+  'Have you ever been ill? What was wrong with you?',
+  'When was the last time you went to the doctor/ dentist/ hospital? Why did you go?',
+  'How often do you have a medical checkup?',
+  'Is a doctor’s visit or a stay in hospital expensive?',
+  'Does your country have a good medical healthcare?',
+  'How is your health? What health problems do you worry about the most?',
+  'What do you do to keep fit and healthy?',
+  'Have you ever stopped doing something for your health?',
+  'What diseases kill the most people worldwide?',
+  'How many serious or terminal illnesses do you know?',
+  'Have you had any vaccines? If so, against which diseases? Are you afraid of needles?',
+  'What sports can be damaging to your health? In what way? In your opinion, what are the healthiest sports?',
+  'What are the main causes of death? Are they the same for younger and older people?',
+  'What are the worst jobs for your health? What about the best ones?',
+  'Is being a doctor or nurse a good job? Would you like to do this job? Why?',
+  'What is the overage life expectancy in your country? Is it the same for men and women?',
+  'How is your mental health? Do you know anyone with a mental disorder?',
+  'How can the environment be damaging to someone’s health?',
+];
+
+//subject object
 const temas = {  
   you: you,
+  family: family,
   school: school,
   music: music,
+  petpeeves: petPeeves,
+  movies: movies,
+  health: health,
 };
 
 const selectElement = document.querySelector('#select');
@@ -103,8 +195,10 @@ function getRandom(arr) {
 }
 
 selectElement.addEventListener('change', (event) => {
-  console.log(event.target.value);
-  tema = event.target.value.toLowerCase();
+  console.log('elegido', event.target.value); // puede estar o no, es para ver en consola
+  tema = event.target.value.toLowerCase(); // toLowerCase() method pasar todo a minusculas
+  tema = tema.replace(/\s/g, ''); //How to replace white space inside a string in JavaScript
+  console.log('tema', tema); // puede estar o no, es para ver en consola
   var elem = document.getElementById('textAsk');
   elem.innerHTML = getRandom(temas[tema]);
 });
