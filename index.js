@@ -1,4 +1,4 @@
-var you = [
+const you = [
   'What’s your name?',
   'What’s your surname?',
   'What’s  your nickname?',
@@ -27,7 +27,7 @@ var you = [
   'What time do you usually go to bed?',
 ];
 
-var family = [
+const family = [
   'How many people are there in your family? Who are they?',
   'Do you have any brothers or sisters?', 
   'How many grandparents have you got? How often do you see them?',
@@ -48,7 +48,7 @@ var family = [
   'Do you ever hold a family reunion? If so, what happens there?',
 ];
 
-var school = [
+const school = [
   'What school do you go to? Where is it? How do you get there?',
   'What’s your favourite subject? Why do you like it?',
   'What time do you get up on a school day? Who wakes you up?',
@@ -69,7 +69,7 @@ var school = [
   'What do you like best about your school?',
 ];
 
-var music = [
+const music = [
   'What’s your favourite kind of music?',
   'Can you play a musical instruments? If so, which one?',
   'How often do you listen to music?',
@@ -108,7 +108,7 @@ var music = [
   "Has your taste in music changed over the years?",
 ];
 
-var petPeeves = [
+const petPeeves = [
   'What annoys you most in daily life? Make a list of your pet peeves.',
   'Make a list of annoying habits. Do you have any?',
   'What annoys you most at work (or at school)? Why?',
@@ -128,7 +128,7 @@ var petPeeves = [
   'Does it annoy you when people kiss or show affection in public?',
 ];
 
-var movies = [
+const movies = [
   'How often do you go to the cinema? Who do you go with?',
   'What’s the name of the last film you saw? What was it about?',
   'Do you prefer to watch movies at home or in the cinema? Why?',
@@ -155,7 +155,7 @@ var movies = [
   'Have you ever asked for an autograph?',
 ];
 
-var health = [
+const health = [
   'Have you ever been ill? What was wrong with you?',
   'When was the last time you went to the doctor/ dentist/ hospital? Why did you go?',
   'How often do you have a medical checkup?',
@@ -176,6 +176,130 @@ var health = [
   'How can the environment be damaging to someone’s health?',
 ];
 
+const work = [
+  'What do you do? Do you enjoy being a (…)? Why?',
+  'What would you like to be? Why?',
+  'Would you prefer a job that pays well or a job you enjoy? Explain',
+  'What kind of office work does a secretary do?',
+  'Which job would you never want to do? Why?',
+  'In your opinion, what is the most boring job in the world?',
+  'What’s your father’s job? What time does he start work?',
+  'Which jobs pays well? Give minimum 3 examples',
+  'Do you prefer working indoors or outdoors? Why?',
+  'Do you think being a singer is a hard job? Explain why',
+  'What three things are most important for you in a job?',
+  'Who in your family or among your friends has the most interesting job? Explain',
+  'What does your mother do? What time does she finish work?',
+  'In which jobs do you have to wear a uniform? Give minimum 3 examples',
+  'Name 3 outdoor jobs. Would you like to do any of them?',
+  'In which jobs do you need to work evenings and weekends?',
+  'If you could have your own business, what would it be?',
+  'Do you think professional sports player are overpaid? Explain',
+];
+
+const pets = [
+  'Do you have  a pet? If not, have you ever had one?',
+  'What’s the strangest, scariest or most unusual pet you have ever seen?',
+  'Some people let their pet(s) sleep in their bedroom or even on or in their bed. What do you think of this?',
+  'Do you think it is right to keep wild animals in a zoo?',
+  'Exotic pets are becoming increasingly popular. Why? Can you name some? Do you know any endangered species?',
+  'What do you think of cultures that eat dog meat/ horse meat/ monkey/ insects/ snails? Would you try it?',
+  'What are the most popular pets nowadays? According to you, why are these animals populars?',
+  'What are the pros and cons of keeping a pet? (= what is good and bad about)',
+  'Should the people living in an apartment be allowed to keep a pet? Which pets would be okay?',
+  'Would you eat rabbit meat?',
+  'Would yo go to a dog race?',
+  'Would you pet a spider?',
+  'Would you touch a snake?',
+  'Do you think it is okay to use animals for medical research? What about testing cosmetics? Which animals are found in labs?',
+  '"Animals should never be kept in captivity. They belong in the wild" (= in a cage or locked up) Do you agree?',
+  'Which animal makes the best pet? Why?',
+  'Which animals should not be kept as pets?',
+  'Classify all possible pets you can think of in a category grid (mammal, bird, reptile, fish, insect…)',
+  'Some people let their pets in the house, others always keep them outdoors (e.g. in the garden). What’s best?',
+  'Is it okay to kill animals for their meat, fur - or just for sport or fun?',
+  "‘We can judge the heart of a man by his treatment of animals’  What does this mean? Do you agree?",
+];
+
+const tv = [
+  'How often do you watch TV? How many hours pre day?',
+  'Do you have cable TV at home? If not, why not?',
+  'Is watching TV good or bad for you? Explain',
+  'When and where do you usually watch TV? Give times and places',
+  'Have you ever been on TV? In which show?  If not, would you like to?',
+  'Do you ever watch reality TV show? Do you like them? Why (not)?',
+  'What kind of Tv programs do you like to watch?',
+  'TV antenna, satellite	dish or cable TV. How does the TV signal reach your home?',
+  'Could you live without television? Explain',
+  'Do you watch TV while eating breakfast, lunch or dinner?',
+  'What’s your favourite TV programme? Name and describe it.',
+  'Do you watch soap operas on TV? Do you like them? What’s your favourite?',
+  'Do you ever watch English channels? Which ones?',
+  'TV commercials: useful or a waste of time? What do you think?',
+  'Do you have a TV in your bedroom? Why or why not?',
+  'Have you ever visit a TV studio? Tell about it',
+  'How many channels can you watch on your TV?  What’s your favourite?',
+  'You can improve your English by watching TV. Do you agree? Explain',
+];
+
+const english = [
+  'Why are you learning English? Give reasons and explain', 
+  'How often do you speak English? Who do you talk to?',
+  'Who is the best speaker of English in your family? Where did they learn it?',
+  'How many words are there in English? How many do you need to know? Do research',
+  'What’s the best way to improve your English?',
+  'Speaking, listening, reading or writing? Which skill is most important to you? Why?',
+  'What do you find difficult when learning English? Give some examples',
+  'Do you think it is more important to speak fluently or without mistakes? Why?',
+  'When did you last speak English? (Outside the classroom) What did you talk about?',
+  'What’s a good way to increase your vocabulary?',
+  'How many native speakers of English are there worldwide? Guess. Then do research',
+  'Which is more important: grammar or vocabulary?',
+  'Where in the world is English spoken as a first language?',
+  'Do you ever read in English? If so, what do you read? If not, why not?',
+  'Have you ever visited on English-speaking country?', 
+  'Native speakers are hard to understand. Do you agree? How to improve listening skills?',
+  'How many words do you need to communicate effectively in most situation?',
+  'How many words does the average native speaker know?',
+  'How long have you been learning English? How long will you keep learning?',
+  'What do you find difficult when learning English? Discuss',
+  'What kind of classroom activities do you like most? Make a list',
+  'Is it more important to speak fluently(without pauses or thinking) or accurately(without making mistakes)? Why?',
+  'What can you do to improve your English? Work in group and make a list of ideas',
+  'What do you think about your course book? Say what you like and don’t like about it',
+  'Why are you learning English? Explain',
+  'According to you, which is the most important: grammar or vocabulary? Explain why and share ideas',
+  'How do you memorise new vocabulary or grammar rules?',
+  'Do you think homework is useful or just a waste of time? What kind of homework do you prefer?',
+  'How long does it take to become proficient in English? (really good at)',
+  'Have you ever been to an English speaking country or talked to a foreigner in English? Describe your experience',
+  'How often do you use English outside of the classroom? Do you think this is enough? How could you practice more?',
+  'What (or who) motivates you to learn English?',
+  'What could a teacher do to make lessons more interesting? Give suggestions',
+  'Are dictionaries allowed during exams? If not, should they be allowed? Explain why',
+  'Do you prefer teachers who speaks English only or teachers who sometimes use your languages? What is best?',
+  "‘Learning English is a complete waste of time. I’ll never use it later anyway’ Do you agree?",   
+  'What are the qualities of a good teacher?',
+  'What’s your native language? How many languages can you speak?',
+  'Does everyone speak the same way in your country or are there different dialects?',
+  'In your opinion, what is the most difficult language to learn? Explain your view',
+  'Which languages do not use the Roman alphabet? How many can you name? What you you find difficult when learning a new language?',
+  'What languages do the deaf use to communicate? What about the blind?',
+  'Which languages are spoken in your country? Which languages are taught in school?',
+  'What are the most widely spoken(native) languages in the world? Make a list',
+  'What is a language exchange programme? Would you like to go on one? Explain way or way not',
+  'Do you have any friends that speak different languages? Talk about them',
+  'Some languages are dying because there are no speakers left. Is this a good or bad thing? Should they be preserved?',
+  'How important is body language? Is it universal or cultural?',
+  'How many languages are there in the world?',
+  'How and when do you think languages first started?',
+  'How do animals communicate? Would you call this languages and if so, how is human language different from animal language?',
+  'Has your language adopted any English words? (e.g computer)',
+  'What gestures do you use to communicate? Are they the same in every country? Do research',
+  'Should we all speak the same languages? Which one? Is this possible and would this make the world a better place?',
+];
+
+
 //subject object
 const temas = {  
   you: you,
@@ -185,6 +309,10 @@ const temas = {
   petpeeves: petPeeves,
   movies: movies,
   health: health,
+  work: work,
+  pets: pets,
+  tv: tv,
+  english: english,
 };
 
 const selectElement = document.querySelector('#select');
