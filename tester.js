@@ -86,10 +86,10 @@ selectElement.addEventListener('change', (event) => {
     console.log(event.target.value); // I can put or not
     var elem = document.getElementById('textAsk');
     elem.innerHTML = getRandom(temas[tema]);
-
-    var square = document.getElementById('square');
 });
-    
+
+var square = document.getElementById('square');
+
 square.addEventListener('click', function () {
     var elem = document.getElementById('textAsk');
     elem.innerHTML = getRandom(temas[tema]);    
